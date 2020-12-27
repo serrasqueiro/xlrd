@@ -11,6 +11,24 @@ https://github.com/python-excel/xlrd
 Once that has been done and you have a checkout, you can follow these
 instructions to perform various development tasks:
 
+
+About this repository
+-----------------------
+This is a fork. I have done the following after forking:
+```
+git remote add upstream git@github.com:python-excel/xlrd.git
+git fetch upstream
+```
+
+Use the following command to see if you are aligned with that:
+```
+git remote -v | grep "(fetch)"$ | awk '{printf "%-10s %s\n", $1, $2}'
+```
+- origin     git@github.com:serrasqueiro/xlrd.git
+- upstream   git@github.com:python-excel/xlrd.git
+
+
+
 Setting up a virtualenv
 -----------------------
 
